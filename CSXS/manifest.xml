@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest
+  Version="11.0"
+  ExtensionBundleId="jsp.exportStems"
+  ExtensionBundleVersion="0.0.0">
+  <ExtensionList>
+    <Extension Id="jsp.exportStems"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PPRO" Version="22.0"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="jsp.exportStems">
+      <DispatchInfo >
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./jsx/extendScript.jsx</ScriptPath>
+          <CEFCommandLine>
+              <Parameter>--enable-nodejs</Parameter>
+          </CEFCommandLine> 
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>false</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Custom</Type>
+          <Menu>Export stems...</Menu>
+          <Geometry>
+            <Size>
+              <Height>500</Height>
+              <Width>500</Width>
+            </Size>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
